@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('./fonts/KaushanScript-Regular.ttf') format('truetype');
+}
+
+body {
+    background: rgba(0, 0, 0, 0.856);
+}
+
+#todo-list {
+    width: 500px;
+    padding: 1cm;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Kaushan Script', 'Times New Roman';
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 5mm;
+}
+
+form {
+    display: flex;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+form input {
+    flex-grow: 1;
+    padding: 4px 8px;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(62, 138, 151);
+    border-radius: 5px;
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(173, 47, 28);
+}
+button:active {
+    background-color: rgb(130,35,21);
+}
+
+.todo {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(15, 26, 61);
+    border-radius: 5px;
+    padding: 20px 25px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.todo-text {
+    display: flex;
+    align-self: center;
+    font-size: 24px;
+    margin-bottom: 8mm;
+}
+
+.strike {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.todo input[type="checkbox"] {
+    transform: scale(1.8) translateY(1px);
+    margin: 0 5mm 0 0;
+    cursor: pointer;
+}
+
+.todo input[type='text'] { 
+    font-size: 20px;
+    padding: 4px 8px;
+}
+  
+.todo-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-actions button {
+    border-radius: 3px;
+    padding: 7px 14px;
+    font-size: 20px;
+}
